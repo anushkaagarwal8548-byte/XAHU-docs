@@ -1,0 +1,82 @@
+.home_page_main_body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.home_page_main_body .home_controls{
+    display: flex;
+    background-color: rgba(144, 223, 144, 0.507);
+    padding: 8px;
+    gap: 5px;
+    box-shadow: 0px 0px 2px 1px green;
+}
+.home_page_main_body .search_input{
+    width: 100%;
+}
+.home_page_main_body .search_by_menu{
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    font-size: 1rem;
+}
+
+.home_page_main_body .items_holder{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+}
+.home_page_main_body .items_holder .holder_{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+}
+
+.home_page_main_body .items_holder .holder_ .image_block{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    width: 200px;
+    aspect-ratio: 1/1;
+    background-color: #f0ffee;
+    box-shadow: 0px 0px 2px 0px gray;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: 0px 0px 6px 0px gray;
+    }
+}
+.home_page_main_body .items_holder .holder_ .image_block .image_holder{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border: 1px solid green;
+}
+.home_page_main_body .items_holder .holder_ .image_block .info_box{
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+}
+.home_page_main_body .items_holder .holder_ .image_block .info_box .into_text{
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.home_page_main_body .items_holder .holder_ .image_block .info_box .copy_link{
+    margin-left: auto;
+    background-color: rgba(138, 255, 127, 0.575);
+    border-radius: 30px;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.home_page_main_body .items_holder .nxt_prv_btn{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+}

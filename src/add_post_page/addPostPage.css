@@ -1,0 +1,46 @@
+.add_postmain_body{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgba(0, 170, 23, 0.2);
+    border-radius: 5px;
+    height: fit-content;
+    margin: auto;
+    padding: 10px;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.add_postmain_body .form_{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add_postmain_body .form_ input{
+    background-color: white;
+    border: 2px solid gray;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 15px;
+    &:focus{
+        box-shadow: 0px 0px 4px 2px rgba(20, 181, 255, 0.6);
+    }
+}
+
+.add_postmain_body .input_lbl{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: green;
+}
+
+.add_postmain_body .image_preview{
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid green;
+    aspect-ratio: 2/1;
+}

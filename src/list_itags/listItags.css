@@ -1,0 +1,25 @@
+.list_itags_body{
+    height: 100%;
+}
+
+.list_itags_body h2{
+    text-align: center;
+}
+
+.list_itags_body .action_list_table{
+    border: 1px solid black;
+    width: 80%;
+    margin: auto;
+}
+.list_itags_body .action_list_table *{
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.list_itags_body .action_list_table .action{
+    background-color: rgb(75, 75, 75);
+    color: white;
+}

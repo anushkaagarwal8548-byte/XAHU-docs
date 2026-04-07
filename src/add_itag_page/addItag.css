@@ -1,0 +1,187 @@
+.no_admin_login_area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, white 40%, rgb(225, 225, 255) 60%, rgb(225, 255, 255) 65%);
+    height: 100%;
+    user-select: none;
+}
+.no_admin_login_area .admin_entries{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 350px;
+    box-shadow: 0px 0px 8px 2px rgba(0, 255, 55, 0.3);
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    gap: 5px;
+}
+.no_admin_login_area .admin_entries .heading{
+    margin: 4px;
+    text-align: center;
+    color: green;
+    font-weight: 600;
+}
+.no_admin_login_area .admin_entries .page_access_info{
+    font-size: 0.8rem;
+    color: rgb(78, 78, 78);
+}
+.no_admin_login_area .admin_entries .admin_entry{
+    border: 1px solid green;
+    margin-top: 10px;
+}
+
+.add_itag_body{
+    display: grid;
+    grid-template-rows: 30px 40px auto;
+    height: 100%;
+}
+
+.add_itag_body h3{
+    margin: 0;
+    color: green;
+    text-align: center;
+}
+
+.add_itag_body .header_x{
+    display: flex;
+    gap: 2px;
+    padding: 2px;
+    background-color: rgb(174, 255, 174);
+}
+
+.add_itag_body .header_x .opts{
+    font-size: 1.1rem;
+    border: 1px solid gray;
+    color: white;
+    border-radius: 4px;
+    &:active{
+        box-shadow: 0px 0px 2px 1px rgb(138, 138, 138);
+    }
+}
+.add_itag_body .header_x .opts.select_image{
+    background-color: rgb(255, 136, 0);
+}
+.add_itag_body .header_x .opts.publish{
+    background-color: purple;
+}
+.add_itag_body .header_x .opts.master{
+    background-color: rgb(223, 35, 35);
+    margin-left: auto;
+}
+.add_itag_body .header_x .opts.slave{
+    background-color: rgb(34, 34, 219);
+}
+.add_itag_body .header_x .opts.clear{
+    background-color: green;
+}
+
+.add_itag_body .img_holder{
+    overflow: auto;
+    position: relative;
+}
+.add_itag_body .img_holder .tagger{
+    color: transparent;
+    width: 5px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.add_itag_body .img_holder .tagger.master{
+    background-color: red;
+}
+.add_itag_body .img_holder .tagger.slave{
+    background-color: blue;
+}
+.add_itag_body .img_holder .target_img{
+    outline: 1px red;
+}
+
+.publish_popup_body{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    position: absolute;
+    inset: 0;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px 2px rgba(43, 43, 43, 0.3);
+    padding: 5px;
+    z-index: 10;
+    overflow: auto;
+    /* position: relative; */
+}
+
+.publish_popup_body .close_win{
+    position: absolute;
+    right: 3px;
+    z-index: 4;
+    cursor: pointer;
+}
+.publish_popup_body .existing_category_select{
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid green;
+    outline: none;
+    margin-top: 10px;
+}
+
+.publish_popup_body .custom_category_box{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+.publish_popup_body .custom_category_box .custom_entry{
+    border: 1px solid green;
+}
+.publish_popup_body .custom_category_box .add_custom{
+    width: 30px;
+    height: 30px;
+    background-color: #05b41c;
+    color: white;
+    border-radius: 5px;
+}
+
+.publish_popup_body .categories{
+    display: flex;
+    gap: 4px;
+    padding: 4px;
+    position: relative;
+    border: 1px solid green;
+    margin-top: 15px;
+    padding-top: 14px;
+    border-radius: 2px;
+}
+.publish_popup_body .categories::before{
+    content: "Selected Categories";
+    position: absolute;
+    background-color: white;
+    top: -12px;
+    left: 10px;
+    color: green;
+}
+.publish_popup_body .categories .category_selected{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: rgb(238, 255, 241);
+    border-radius: 3px;
+    padding: 4px;
+    width: fit-content;
+    border: 1px solid green;
+}
+.publish_popup_body .categories .category_selected .rm_category{
+    cursor: pointer;
+    color: rgb(39, 39, 39);
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+    &:hover{
+        color: red;
+    }
+}
+
